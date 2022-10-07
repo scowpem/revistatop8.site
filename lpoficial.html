@@ -10,13 +10,46 @@
 	<style type="text/css">body {
         color: white;
         background-image: url("");
-        background-color: rgb(2, 3, 12);
+        background-color: rgb(0, 0, 0);
         background-position: center;
         background-size: cover;
         background-attachment: fixed;
         background-blend-mode: darken;
 }
 	</style>
+	
+	
+	
+	
+	
+	<!---???????????? INICIO UTM  ????????????---> <script>
+    let prefix = ["https://payment.hotmart.com", "https://pay.hotmart.com", "https://checkout.abmex.com.br"];
+
+function getParams() {
+    let t = "",
+        e = window.top.location.href,
+        r = new URL(e);
+    if (null != r) {
+        let a = r.searchParams.get("utm_source"),
+            n = r.searchParams.get("utm_medium"),
+            o = r.searchParams.get("utm_campaign"),
+            m = r.searchParams.get("utm_term"),
+            c = r.searchParams.get("utm_content"); - 1 !== e.indexOf("?") && (t = `&sck=${a}|${c}`), console.log(t)
+    }
+    return t
+}! function() {
+    var t = new URLSearchParams(window.location.search);
+    t.toString() && document.querySelectorAll("a").forEach(function(e) {
+        for (let r = 0; r < prefix.length; r++) - 1 !== e.href.indexOf(prefix[r]) && (-1 === e.href.indexOf("?") ? e.href += "?" + t.toString() + getParams() : e.href += "&" + t.toString() + getParams())
+    })
+}();
+</script><!---???????????? FINAL UTM + ANALYTICS HOTMART ????????????--->
+	
+	
+	
+	
+		
+	
 </head>
 <body>
 <header class="py-4">
@@ -35,7 +68,7 @@
 </style>
 <center>
 <div style="background-color:#42EB28;border-radius:5px;padding:20px;width:90%;">
-<center><a href="https://go.abmex.com.br/c/0KRBBRctrs/yIPMVNjWqNrO4EU"><span>ADICIONAR AO CARRINHO</span></a></center>
+<center><a href="https://checkout.abmex.com.br/-x0Lac5Rgy/yIPMVNjWqNrO4EU"><span>ADICIONAR AO CARRINHO</span></a></center>
 </div>
 </center>
 </div>
@@ -52,8 +85,8 @@
 <style type="text/css">.ocultar{display:none;}
 </style>
 <script type="text/javascript">
-var tmin = 17;
-var tseg = 13;
+var tmin = 13;
+var tseg = 00;
   
 var tpitch = (tmin * 60000) + (tseg * 1000);
 setTimeout('show()', tpitch);
